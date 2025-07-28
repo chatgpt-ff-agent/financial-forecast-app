@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Livewire\FinancialForecast;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', FinancialForecast::class);
